@@ -1,3 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-color: antiquewhite;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.HI
+{
+    color: purple;
+    font-size: 24px;
+}
+.container{
+ background-color: aquamarine;
+ width: 870px;
+ padding: 30px;
+}
+
 .players
 {
     display: grid;
@@ -7,8 +28,9 @@
 .player
 {
     display: flex;
+    align-items: center;
 }
-.player img{
+.player img {
     width: 56px;
     height: 56px;
 }
