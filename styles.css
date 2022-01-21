@@ -6,7 +6,9 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+   align-items: center;
+
 }
 .HI
 {
@@ -18,6 +20,8 @@ main{
  background-color: aquamarine;
  width: 900px;
  padding: 20px;
+ margin-top: 20px;
+ border-radius: 5px;
 }
 
 .players
@@ -45,8 +49,17 @@ main{
 hr{
     border-top: 5px;
     border: 2px solid grey;
+    margin-bottom: 30px;
+
 }
 /* top blog styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 24px;
+    box-shadow: brown;
+}
 .blog{
     display: flex;
 }
@@ -59,7 +72,74 @@ hr{
     color: red;
     font-size: 17px;
 }
+
 .wow a{
     text-decoration:none ;
     font-size: 16px;
+}
+/* couse--style */
+.couses
+{
+    display: grid;
+     grid-template-columns: repeat(3,1fr);
+}
+.course .course-banner img{
+    height: 104px;
+    width: 224px;
+}
+
+.fild{
+    color: green;
+    display: flex;
+}
+.emty{
+    color: red;
+}
+.course-rate
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ------media quiray--- */
+/* -------- mobile dedvise------ */
+@media only screen and (max-width:688px) {
+    .player{
+        background-color: red;
+    }
+    
+}
+nav li{
+    list-style: none;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+ 
+}
+    
+}
+nav li a{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+    background-color: cyan;
+}
+nav li:hover{
+    background-color: chartreuse;
+}
+.wo
+{
+    display: inline;
+    display: none;
+    margin-right: 0%;
+}
+.wo :hover{
+    display: block;
+ 
+}
+nav >ul> li:hover >ul{
+display: block;
 }
